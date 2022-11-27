@@ -119,14 +119,43 @@ button {
   width: 15%;
 }
 .info {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
   margin-top: 1rem;
   background-color: whitesmoke;
   border-radius: 15px;
   text-align: center;
   padding: 1rem;
+  box-shadow: -1px 10px 27px 0px rgba(66, 66, 66, 0.75);
+}
+@media screen and (min-width: 720px) {
+  .info {
+    grid-template-areas: "ip location timezone isp";
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-inline: 2rem;
+    text-align: left;
+    max-width: max-content;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .submitter {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  .sub-info p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
 }
 .sub-info {
-  margin: 1rem;
+  padding-block: 0.2rem;
+  padding-inline: 0.5rem;
 }
 .sub-info h4 {
   color: var(--clr-dark-gray);

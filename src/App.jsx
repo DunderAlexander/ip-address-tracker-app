@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     async function getMyInfo() {
-      const res = await fetch("https://api.ipify.org?format=json	");
+      const res = await fetch("https://api.ipify.org?format=json");
       const data = await res.json();
       const myInfo = await getInfo(data.ip);
       console.log(myInfo);

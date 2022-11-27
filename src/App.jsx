@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [coord, setCoord] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function getMyInfo() {

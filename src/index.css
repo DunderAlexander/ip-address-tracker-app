@@ -90,6 +90,7 @@ body {
   background-image: url(/images/pattern-bg.png);
   background-repeat: no-repeat;
   background-size: 110rem;
+  height: 40%;
 }
 .wrapper {
   z-index: 100;

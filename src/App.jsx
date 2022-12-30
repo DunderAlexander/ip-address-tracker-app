@@ -65,8 +65,8 @@ function App() {
           }}
         >
           <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+            url="https://api.maptiler.com/maps/basic-v2/{z}/{x}/{y}.png?key=9aoW2uiPwYwQifPW4uKL"
           />
           <SetViewOnClick
             coordLatLang={[coord.location.lat, coord.location.lng]}

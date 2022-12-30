@@ -13,7 +13,6 @@ function App() {
       const res = await fetch("https://api.ipify.org?format=json");
       const data = await res.json();
       const myInfo = await getInfo(data.ip);
-      console.log(myInfo);
       setCoord(myInfo);
       setLoading(false);
     }

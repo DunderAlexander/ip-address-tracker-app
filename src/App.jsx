@@ -20,11 +20,15 @@ function App() {
   }, []);
 
   async function getInfo(ip) {
-    const res = await fetch(
-      `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${ip}`
-    );
-    const data = await res.json();
-    return data;
+    try {
+      const res = await fetch(
+        `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${ip}`
+      );
+      const data = await res.json();
+      return data;
+    } catch (error) {
+      console.error(error);
+    }
   }
   async function pasteInfo(ip) {
     const info = await getInfo(ip);
@@ -41,7 +45,7 @@ function App() {
     return null;
   }
   return (
-    <div>
+    <>
       <div className="container">
         <h1>IP Address Tracker</h1>
         <div className="wrapper">
@@ -72,7 +76,7 @@ function App() {
           />
         </MapContainer>
       )}
-    </div>
+    </>
   );
 }
 export default App;

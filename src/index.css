@@ -82,6 +82,7 @@ body {
   color: var(--clr-very-dark-gray);
   background-color: darkblue;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -90,7 +91,7 @@ body {
   background-image: url(/images/pattern-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40%;
+  min-height: 40vh;
 }
 .wrapper {
   z-index: 100;

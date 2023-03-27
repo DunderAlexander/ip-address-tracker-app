@@ -89,7 +89,7 @@ body {
   align-items: center;
   background-image: url(/images/pattern-bg.png);
   background-repeat: no-repeat;
-  background-size: 110rem;
+  background-size: cover;
   height: 40%;
 }
 .wrapper {
